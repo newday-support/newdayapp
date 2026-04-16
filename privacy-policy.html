@@ -121,14 +121,14 @@
     <div class="tagline">Freedom to live the life you were meant to live.</div>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: April 14, 2026 &nbsp;·&nbsp; Last updated: April 14, 2026</p>
+    <p class="meta">Effective date: April 14, 2026 &nbsp;·&nbsp; Last updated: April 16, 2026</p>
 
     <div class="highlight-box">
       <p>NewDay is built for people doing something deeply personal. We designed privacy in from the start — not as a legal checkbox, but because you deserve it.</p>
     </div>
 
     <h2>1. Who We Are</h2>
-    <p>NewDay is an independent mobile application. For privacy inquiries, contact us at <a href="mailto:support@trynewday.app">support@trynewday.app</a>.</p>
+    <p>NewDay is an independent mobile application. For privacy inquiries, contact us at <a href="mailto:support@trynewday.app">support@trynewday.app</a>. By using NewDay you also agree to our <a href="/terms-of-service.html">Terms of Service</a>.</p>
 
     <h2>2. What We Collect — and What We Don't</h2>
 
@@ -142,6 +142,7 @@
       <li>Location data</li>
       <li>Device identifiers for advertising purposes</li>
       <li>The content of your journal entries — these stay on your device only, always</li>
+      <li>The content of your Mirror reflections — these stay on your device only, always</li>
       <li>The content of your intervention session responses — only timing and trigger category are stored, never what you wrote</li>
     </ul>
 
@@ -159,6 +160,7 @@
       <li><strong>Onboarding answers</strong> — your values and goals from setup, used only to personalize your experience within the app.</li>
       <li><strong>Trigger categories</strong> — the category of trigger you select during intervention check-ins (e.g., "stress", "boredom"). Not the content of your responses. Used only to generate personal insights within the app.</li>
       <li><strong>Session timestamps</strong> — when you started and completed intervention sessions. Used for pattern analysis within the app only.</li>
+      <li><strong>Relapse events</strong> — if you log a relapse, the timestamp, your recovery stage at that time, and the trigger categories you select are stored to support cross-device continuity of your trigger map and recovery timeline. If you choose to write a postmortem note, that free-text note is also stored in your account. No relapse event contains the full content of your intervention responses.</li>
     </ul>
 
     <h2>3. How We Use Your Data</h2>
@@ -168,6 +170,7 @@
       <li>Syncing your progress across devices when you sign in</li>
       <li>Personalizing your daily reframe and intervention session (using trigger patterns and stage data)</li>
       <li>Restoring your progress if you reinstall or switch devices</li>
+      <li>Building your personal trigger map and time-of-day pattern insights across devices</li>
     </ul>
 
     <p>We do not use your data for advertising. We do not sell your data. We do not share your data with third parties for their own purposes.</p>
@@ -183,7 +186,7 @@
       <li>Your free-text responses to the first two steps of the current intervention session</li>
     </ul>
 
-    <p>Journal entries are never sent to any AI. The content of past intervention sessions is never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
+    <p>Journal entries and Mirror reflections are never sent to any AI. The content of past intervention sessions is never sent to any AI. If you have logged relapses with trigger notes, the trigger categories (not the free-text note) from your most recent relapses may be included in your session context to make your intervention more relevant. Your free-text relapse notes are never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
 
     <p>You can use NewDay's full intervention feature without the Claude API — a complete, non-personalized session is always available offline.</p>
 
@@ -193,7 +196,7 @@
 
     <p>Data in transit is encrypted using TLS. Data at rest is encrypted by Supabase's infrastructure.</p>
 
-    <p>Journal entries are stored only on your device using your device's local storage. They are never uploaded. They are never read by NewDay's servers or any AI.</p>
+    <p>Journal entries and Mirror reflections are stored only on your device using your device's local storage. They are never uploaded. They are never read by NewDay's servers or any AI.</p>
 
     <h2>6. Data Deletion</h2>
 
@@ -201,7 +204,7 @@
 
     <p>When you delete your account:</p>
     <ul>
-      <li>All your data is deleted from Supabase servers within 24 hours</li>
+      <li>All your data is deleted from Supabase servers within 24 hours, including any relapse event records and postmortem notes</li>
       <li>Your local app data is wiped immediately</li>
       <li>Your email address is removed from our authentication system</li>
       <li>There is no waiting period and no questions asked</li>
@@ -240,6 +243,7 @@
     <ul>
       <li><strong>Supabase, Inc.</strong> — database and authentication provider. Your account data is stored on Supabase infrastructure. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></li>
       <li><strong>Anthropic, PBC</strong> — AI API used for intervention personalization (described in Section 4). <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a></li>
+      <li><strong>RevenueCat, Inc.</strong> — subscription management provider used to process in-app purchases. RevenueCat processes anonymized subscription status data. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
     </ul>
 
     <p>We do not use advertising networks, social media trackers, or analytics SDKs that share your data with third parties.</p>
@@ -257,7 +261,9 @@
 
     <div class="footer">
       <a href="/" style="color: #aaa; text-decoration: none;">← trynewday.app</a>
-      &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Effective April 14, 2026
+      &nbsp;·&nbsp; <a href="/privacy-policy.html" style="color: #aaa; text-decoration: none;">Privacy Policy</a>
+      &nbsp;·&nbsp; <a href="/terms-of-service.html" style="color: #aaa; text-decoration: none;">Terms of Service</a>
+      &nbsp;·&nbsp; Effective April 14, 2026
     </div>
 
   </div>
