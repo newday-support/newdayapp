@@ -141,7 +141,6 @@
       <li>Social login data (no Google, Apple, or Facebook sign-in)</li>
       <li>Location data</li>
       <li>Device identifiers for advertising purposes</li>
-      <li>The content of your journal entries — these stay on your device only, always</li>
       <li>The content of your Reflection entries — these stay on your device only, always</li>
       <li>The content of your intervention session responses — only timing and trigger category are stored, never what you wrote</li>
     </ul>
@@ -160,7 +159,7 @@
       <li><strong>Onboarding answers</strong> — your values and goals from setup, used only to personalize your experience within the app.</li>
       <li><strong>Trigger categories</strong> — the category of trigger you select during intervention check-ins (e.g., "stress", "boredom"). Not the content of your responses. Used only to generate personal insights within the app.</li>
       <li><strong>Session timestamps</strong> — when you started and completed intervention sessions. Used for pattern analysis within the app only.</li>
-      <li><strong>Relapse events</strong> — if you log a relapse, the timestamp, your recovery stage at that time, and the trigger categories you select are stored to support cross-device continuity of your trigger map and recovery timeline. If you choose to write a reflection note, that free-text note is also stored in your account. No relapse event contains the full content of your intervention responses.</li>
+      <li><strong>Relapse events</strong> — if you log a relapse, the timestamp, your recovery stage at that time, and the trigger categories you select are stored to support cross-device continuity of your trigger map and recovery timeline. If you choose to add an optional free-text note when logging a relapse, that note is also stored in your account. No relapse event contains the full content of your intervention responses.</li>
     </ul>
 
     <h2>3. How We Use Your Data</h2>
@@ -186,7 +185,7 @@
       <li>Your free-text responses to the first two steps of the current intervention session</li>
     </ul>
 
-    <p>Journal entries and Reflection entries are never sent to any AI. The content of past intervention sessions is never sent to any AI. If you have logged relapses with trigger notes, the trigger categories (not the free-text note) from your most recent relapses may be included in your session context to make your intervention more relevant. Your free-text relapse notes are never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
+    <p>The content of your Reflection entries is never sent to any AI (other than the personalised Reflection prompt generation itself, which sends only behavioural metadata — your stage, streak, relapse count, top trigger — and never the text of past Reflection entries). The content of past intervention sessions is never sent to any AI. If you have logged relapses with trigger categories, those trigger categories (not the free-text note) from your most recent relapses may be included in your session context to make your intervention more relevant. Your free-text relapse notes are never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
 
     <p>You can use NewDay's full intervention feature without the Claude API — a complete, non-personalized session is always available offline.</p>
 
@@ -196,7 +195,7 @@
 
     <p>Data in transit is encrypted using TLS. Data at rest is encrypted by Supabase's infrastructure.</p>
 
-    <p>Journal entries and Reflection entries are stored only on your device using your device's local storage. They are never uploaded. They are never read by NewDay's servers or any AI.</p>
+    <p>Reflection entries are stored only on your device using your device's local storage. They are never uploaded. The text content of a Reflection entry is never read by NewDay's servers or by any AI.</p>
 
     <h2>6. Data Deletion</h2>
 
@@ -204,7 +203,7 @@
 
     <p>When you delete your account:</p>
     <ul>
-      <li>All your data is deleted from Supabase servers within 30 days, including any relapse event records and reflection notes</li>
+      <li>All your data is deleted from Supabase servers within 30 days, including any relapse event records and the optional notes attached to them</li>
       <li>Your local app data is wiped immediately</li>
       <li>Your email address is removed from our authentication system</li>
       <li>There is no waiting period and no questions asked</li>
