@@ -121,7 +121,7 @@
     <div class="tagline">Freedom to live the life you were meant to live.</div>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: April 14, 2026 &nbsp;·&nbsp; Last updated: April 21, 2026</p>
+    <p class="meta">Effective date: April 14, 2026 &nbsp;·&nbsp; Last updated: April 24, 2026</p>
 
     <div class="highlight-box">
       <p>NewDay is built for people doing something deeply personal. We designed privacy in from the start — not as a legal checkbox, but because you deserve it.</p>
@@ -185,7 +185,7 @@
       <li>Your free-text responses to the first two steps of the current intervention session</li>
     </ul>
 
-    <p>The content of your Reflection entries is never sent to any AI (other than the personalised Reflection prompt generation itself, which sends only behavioural metadata — your stage, streak, relapse count, top trigger — and never the text of past Reflection entries). The content of past intervention sessions is never sent to any AI. If you have logged relapses with trigger categories, those trigger categories (not the free-text note) from your most recent relapses may be included in your session context to make your intervention more relevant. Your free-text relapse notes are never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
+    <p>The Reflection feature uses the Claude API in two ways: (1) to generate your daily question, using only behavioural metadata (your stage, streak, relapse count, top trigger) — never the text of past Reflection entries; and (2) when you submit a Reflection answer, the question and your response for that session are sent to the Claude API to generate a single closing sentence. Only the current session's question and answer are sent — past Reflection entries are never transmitted. The content of past intervention sessions is never sent to any AI. If you have logged relapses with trigger categories, those trigger categories (not the free-text note) from your most recent relapses may be included in your session context to make your intervention more relevant. Your free-text relapse notes are never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
 
     <p>You can use NewDay's full intervention feature without the Claude API — a complete, non-personalized session is always available offline.</p>
 
@@ -195,7 +195,7 @@
 
     <p>Data in transit is encrypted using TLS. Data at rest is encrypted by Supabase's infrastructure.</p>
 
-    <p>Reflection entries are stored only on your device using your device's local storage. They are never uploaded. The text content of a Reflection entry is never read by NewDay's servers or by any AI.</p>
+    <p>Reflection entries are stored only on your device using your device's local storage. They are never uploaded to NewDay's servers. When you submit a Reflection answer, the question and your response for that session are sent transiently to the Claude API (see Section 4) — past entries are never transmitted, and no Reflection text is stored by NewDay's servers.</p>
 
     <h2>6. Data Deletion</h2>
 
@@ -262,7 +262,7 @@
       <a href="/" style="color: #aaa; text-decoration: none;">← trynewday.app</a>
       &nbsp;·&nbsp; <a href="/privacy-policy.html" style="color: #aaa; text-decoration: none;">Privacy Policy</a>
       &nbsp;·&nbsp; <a href="/terms-of-service.html" style="color: #aaa; text-decoration: none;">Terms of Service</a>
-      &nbsp;·&nbsp; Effective April 14, 2026 &nbsp;·&nbsp; Updated April 21, 2026
+      &nbsp;·&nbsp; Effective April 14, 2026 &nbsp;·&nbsp; Updated April 24, 2026
     </div>
 
   </div>
