@@ -185,7 +185,7 @@
       <li>Your free-text responses to the first two steps of the current intervention session</li>
     </ul>
 
-    <p>The Reflection feature uses the Claude API in two ways: (1) to generate your daily question, using only behavioural metadata (your stage, streak, relapse count, top trigger) — never the text of past Reflection entries; and (2) when you submit a Reflection answer, the question and your response for that session are sent to the Claude API to generate a single closing sentence. Only the current session's question and answer are sent — past Reflection entries are never transmitted. The content of past intervention sessions is never sent to any AI. If you have logged relapses with trigger categories, those trigger categories (not the free-text note) from your most recent relapses may be included in your session context to make your intervention more relevant. Your free-text relapse notes are never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
+    <p>The Reflection feature uses the Claude API only to generate your daily question, using behavioural metadata (your recovery stage, streak length, relapse count, and most frequent trigger category) — never the text of your Reflection entries. Your written responses stay entirely on your device and are never sent anywhere. The content of past intervention sessions is never sent to any AI. If you have logged relapses with trigger categories, those trigger categories (not the free-text note) from your most recent relapses may be included in your session context to make your intervention more relevant. Your free-text relapse notes are never sent to any AI. This data is processed transiently by Anthropic to generate your response and is not retained by Anthropic for training purposes under their standard API terms.</p>
 
     <p>You can use NewDay's full intervention feature without the Claude API — a complete, non-personalized session is always available offline.</p>
 
@@ -195,7 +195,7 @@
 
     <p>Data in transit is encrypted using TLS. Data at rest is encrypted by Supabase's infrastructure.</p>
 
-    <p>Reflection entries are stored only on your device using your device's local storage. They are never uploaded or transmitted to any server. When you submit a Reflection answer, the question and your response for that session are sent transiently to the Claude API (see Section 4) — past entries are never transmitted, and no Reflection text is stored anywhere outside your device.</p>
+    <p>Reflection entries are stored only on your device using your device's local storage. They are never uploaded, transmitted to any server, or sent to any AI. No Reflection text ever leaves your device.</p>
 
     <h2>6. Data Deletion</h2>
 
